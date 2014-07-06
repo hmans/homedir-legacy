@@ -5,4 +5,4 @@
 # If any of the steps fail, execution is cancelled.
 #
 
-rake && git push && cap deploy
+rake && git push && bundle exec cap deploy
