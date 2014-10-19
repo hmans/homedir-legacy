@@ -11,6 +11,9 @@ if [ -f `brew --prefix`/etc/bash_completion ]; then
   . `brew --prefix`/etc/bash_completion
 fi
 
+# LÖVE shortcut
+alias love=/Applications/love.app/Contents/MacOS/love
+
 # Hook up Postgresql.app executables
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.3/bin
 
