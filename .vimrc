@@ -9,6 +9,8 @@ Bundle 'kien/ctrlp.vim'
 set number
 syntax enable
 
+set shell=/bin/bash
+
 " Highlight current line
 :hi CursorLine   cterm=NONE ctermbg=darkgray ctermfg=white guibg=darkgray guifg=white
 :nnoremap <Leader>c :set cursorline! cursorcolumn!<CR>
@@ -22,7 +24,7 @@ set so=7
 " Ignore case when searching
 set ignorecase
 
-" When searching try to be smart about cases 
+" When searching try to be smart about cases
 set smartcase
 
 " Highlight search results
@@ -103,4 +105,3 @@ if has("gui_macvim")
   macmenu &File.New\ Tab key=<nop>
   map <D-t> :CtrlP<CR>
 endif
-
