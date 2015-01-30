@@ -45,6 +45,7 @@
 #
 [core]
   whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
+	editor = /usr/bin/vim
 
 # Useful aliases
 #
@@ -66,5 +67,6 @@
 	check = true
 	autoinstall = true
 [filter "media"]
-	clean = git-media-clean %f
-	smudge = git-media-smudge %f
+	clean = git media clean %f
+	smudge = git media smudge %f
+	required = true
