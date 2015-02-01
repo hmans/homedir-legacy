@@ -11,11 +11,14 @@ if [ -f `brew --prefix`/etc/bash_completion ]; then
   . `brew --prefix`/etc/bash_completion
 fi
 
+# Android! \o/
+export PATH="/Applications/Android Studio.app/sdk/platform-tools":$PATH
+
 # LÖVE shortcut
 alias love=/Applications/love.app/Contents/MacOS/love
 
 # Hook up Postgresql.app executables
-export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.3/bin
+export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
 
 # Initialize chruby
 source /usr/local/opt/chruby/share/chruby/chruby.sh
