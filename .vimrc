@@ -103,5 +103,15 @@ set runtimepath^=~/.vim/bundle/ctrlp.vim
 " Map CtrlP for MacVim
 if has("gui_macvim")
   macmenu &File.New\ Tab key=<nop>
-  map <D-t> :CtrlP<CR>
 endif
+
+" Some additional configuration for CtrlP
+map ; :CtrlP<CR>
+:let g:ctrlp_map = '<Leader>t'
+:let g:ctrlp_match_window_bottom = 0
+:let g:ctrlp_match_window_reversed = 0
+:let g:ctrlp_custom_ignore = '\v\~$|\.(o|swp|pyc|wav|mp3|ogg|blend)$|(^|[/\\])\.(hg|git|bzr)($|[/\\])|__init__\.py'
+:let g:ctrlp_working_path_mode = 0
+:let g:ctrlp_dotfiles = 0
+:let g:ctrlp_switch_buffer = 0
+
