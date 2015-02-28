@@ -16,6 +16,18 @@
 var mash = ["cmd", "alt", "ctrl"];
 var padding = 4;
 
+api.bind('1', ['ctrl'], function() {
+  App.focus("Google Chrome");
+});
+
+api.bind('2', ['ctrl'], function() {
+  App.focus("Atom");
+});
+
+api.bind('3', ['ctrl'], function() {
+  App.focus("Terminal");
+});
+
 api.bind('space', mash, function() {
   Window.focusedWindow().toFullScreen();
 });
@@ -143,6 +155,18 @@ App.byTitle = function(title) {
       app.show();
       return app;
     }
+  }
+}
+
+App.prototype.focus = function() {
+  if (win = this.firstWindow()) {
+    win.focusWindow();
+  }
+}
+
+App.focus = function(name) {
+  if (app = App.byTitle(name)) {
+    app.focus();
   }
 }
 
