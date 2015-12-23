@@ -28,6 +28,7 @@ export PS1=$GREEN"★ \u@\h"'$(
 # I like colors.
 export CLICOLOR=1
 export GREP_OPTIONS='--color=auto'
+alias ls="ls --color=always"
 
 # Don't check mail when opening terminal.
 unset MAILCHECK
