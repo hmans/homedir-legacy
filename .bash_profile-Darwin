@@ -16,7 +16,7 @@ alias love=/Applications/love.app/Contents/MacOS/love
 alias l="love ."
 
 # Hook up Postgresql.app executables
-export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
+export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
 
 # Set up Android development
 export ANDROID_HOME=~/Library/Android/sdk/
