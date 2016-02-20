@@ -43,5 +43,8 @@ alias ts="tig status"
 FILENAME=~/.bash_profile-$(uname)
 [ -f $FILENAME ] && source $FILENAME
 
+# Enable autocompletion for elixir/iex/mix
+source $HOME/bin/all_elixir_auto_complete.bash
+
 # Execute local .bash_profile if available
 [ -e "$HOME/.bash_profile.local" ] && source "$HOME/.bash_profile.local"
